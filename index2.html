@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nbJours = prompt("Combien de jours à prévoir ?");
+
+      function ajouterJours(nb) {
+        let dateAujourdhui = new Date();
+        dateAujourdhui.setDate(dateAujourdhui.getDate() + Number(nb));
+        return dateAujourdhui;
+      }
+
+      let nouvelleDate = ajouterJours(nbJours);
+      alert(`Aprés ${nbJours} jours : ${nouvelleDate.toString()}`);
+    </script>
+  </body>
+</html>
